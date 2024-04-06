@@ -4,9 +4,10 @@ import Products from "./Products";
 import TotalPanel from "./TotalPanel";
 
 function MainWrap() {
+
     return (
         <main className="main">
-            <TotalPanel />
+            <TotalPanel/>
 
             <LatestAddPanel />
 

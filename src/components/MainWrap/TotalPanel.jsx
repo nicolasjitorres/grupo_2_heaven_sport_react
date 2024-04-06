@@ -1,16 +1,31 @@
-import UseDataFetch from "./CustomHooks";
+
+import { useEffect, useState } from "react";
 import TotalBox from "./TotalBox";
 
 function TotalPanel() {
-    const products = UseDataFetch('http://localhost:3000/API/products');
-    const users = UseDataFetch('http://localhost:3000/API/users');
+    const [products, setProducts] = useState({});
+    const [users, setUsers] = useState({});
+    const [act, setAct] = useState(true);
+
+    useEffect(()=>{
+        fetch('http://localhost:3000/API/products')
+        .then(res => res.json())
+        .then(data => setProducts(data));
+    }, [act]);
+
+    useEffect(()=>{
+        fetch('http://localhost:3000/API/users')
+        .then(res => res.json())
+        .then(data => setUsers(data));
+    }, [act]);
 
     return (
         <div className="total-panel">
             <h3>Totales</h3>
+            <button onClick={() => setAct(!act)}>Actualizar</button>
             <TotalBox nombre="productos" total={products.count} />
             <TotalBox nombre="usuarios" total={users.count} />
-            <TotalBox nombre="categorias" total={Object.keys(products.countByCategory).length} />
+            <TotalBox nombre="categorias" total={2} />
         </div>
     )
 }
