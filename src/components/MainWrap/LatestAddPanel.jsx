@@ -13,14 +13,18 @@ function LatestAddPanel() {
     }, [act]);
 
     return (
-        <div className="latest-add-panel">
-            <h3>Ultimos agregados</h3>
-            <button onClick={() => setAct(!act)}>Actualizar</button>
-            {
-                products.map((prod) => {
-                    return <LatestAddBox producto={prod} key={prod.id} />
-                })
-            }
+        <div className="latest-add-panel products">
+            <div className="contTitulo">
+                <h3 className="titulo">Ultimos agregados</h3>
+                <button className='actProd btn' onClick={() => setAct(!act)}>Actualizar</button>
+            </div>
+            <div className="section">
+                {
+                    products.map((prod) => {
+                        return <LatestAddBox producto={prod} key={prod.id} />
+                    })
+                }
+            </div>
         </div>
     )
 }
