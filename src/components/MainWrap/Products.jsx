@@ -17,7 +17,7 @@ function Products() {
             <button onClick={() => setAct(!act)}>Actualizar</button>
             {
                 products.map(prod => {
-                    return <Product nombre={prod.nombre} key={prod.id} />
+                    return <Product producto={prod} key={prod.id} />
                 })
             }
         </div>

@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Categories from "./Categories";
+import Categories from "./Categories/Categories";
 import LatestAddPanel from "./LatestAddPanel";
 import Products from "./Products";
 import TotalPanel from "./TotalPanel";
@@ -11,10 +11,10 @@ function MainWrap() {
         <main className="main">
             <Routes>
                 <Route path="/" exact element={<Home />} />
-                <Route path="/statistics" exact element={<TotalPanel />} />
                 <Route path="/products" exact element={<Products />} />
                 <Route path="/products/last" exact element={<LatestAddPanel />} />
                 <Route path="/products/categories" exact element={<Categories />} />
+                <Route path="/totals" exact element={<TotalPanel />} />
             </Routes>
         </main>
     )

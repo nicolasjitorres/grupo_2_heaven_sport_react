@@ -1,7 +1,8 @@
-function LatestAddBox({nombre}) {
+function LatestAddBox({ producto }) {
     return (
         <div className="latest-add-box">
-            <p>Nombre: {nombre}</p>
+            <p>Nombre: {producto.nombre}</p>
+            <p>descuento: {producto.descuento}</p>
         </div>
     )
 }

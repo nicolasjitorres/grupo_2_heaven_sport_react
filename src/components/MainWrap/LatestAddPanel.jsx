@@ -18,7 +18,7 @@ function LatestAddPanel() {
             <button onClick={() => setAct(!act)}>Actualizar</button>
             {
                 products.map((prod) => {
-                    return <LatestAddBox nombre={prod.nombre} key={prod.id} />
+                    return <LatestAddBox producto={prod} key={prod.id} />
                 })
             }
         </div>

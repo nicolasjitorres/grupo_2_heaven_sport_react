@@ -19,13 +19,14 @@ function TotalPanel() {
         .then(data => setUsers(data));
     }, [act]);
 
+
     return (
         <div className="total-panel">
             <h3>Totales</h3>
             <button onClick={() => setAct(!act)}>Actualizar</button>
             <TotalBox nombre="productos" total={products.count} />
             <TotalBox nombre="usuarios" total={users.count} />
-            <TotalBox nombre="categorias" total={2} />
+            <TotalBox nombre="categorias" total={products.countByCategory ? products.countByCategory.length : "Cargando..."} />
         </div>
     )
 }

@@ -11,23 +11,27 @@ function MenuBar() {
               Home
             </Link>
           </li>
+
           <li>
             <Link to="/products">
               Listado de productos
             </Link>
           </li>
+
           <li>
             <Link to="/products/last">
               Ultimos productos
             </Link>
           </li>
+
           <li>
             <a href="/products/categories">
               Categorias
             </a>
           </li>
+
           <li>
-            <Link to="/statistics">
+            <Link to="/totals">
               Totales
             </Link>
           </li>
