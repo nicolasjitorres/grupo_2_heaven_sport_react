@@ -1,4 +1,5 @@
 import './App.css';
+import './components/estiloGeneral.css';
 import Dashboard from './components/Dashboard.jsx';
 
 function App() {
