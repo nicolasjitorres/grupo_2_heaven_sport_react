@@ -8,27 +8,27 @@ function MenuBar() {
         <ul>
           <li>
             <Link to="/">
-              - Home
+              Home
             </Link>
           </li>
           <li>
             <Link to="/products">
-              - Listado de productos
+              Listado de productos
             </Link>
           </li>
           <li>
             <Link to="/products/last">
-              - Ultimos productos
+              Ultimos productos
             </Link>
           </li>
           <li>
             <a href="/products/categories">
-              - Categorias
+              Categorias
             </a>
           </li>
           <li>
             <Link to="/statistics">
-              - Estadísticas
+              Totales
             </Link>
           </li>
         </ul>
