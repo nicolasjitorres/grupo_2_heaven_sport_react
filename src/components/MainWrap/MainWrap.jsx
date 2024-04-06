@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom";
 import Categories from "./Categories";
 import LatestAddPanel from "./LatestAddPanel";
 import Products from "./Products";
@@ -7,13 +8,12 @@ function MainWrap() {
 
     return (
         <main className="main">
-            <TotalPanel/>
-
-            <LatestAddPanel />
-
-            <Categories />
-
-            <Products />
+            <Routes>
+                <Route path="/statistics" exact element={<TotalPanel />} />
+                <Route path="/products" exact element={<Products />} />
+                <Route path="/products/last" exact element={<LatestAddPanel />} />
+                <Route path="/products/categories" exact element={<Categories />} />
+            </Routes>
         </main>
     )
 }
