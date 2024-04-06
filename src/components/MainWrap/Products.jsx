@@ -10,16 +10,20 @@ function Products() {
             .then(res => res.json())
             .then(data => setProducts(data.products));
     }, [act]);
-
+    
     return (
         <div className="products">
-            <h3>Listado de productos</h3>
-            <button onClick={() => setAct(!act)}>Actualizar</button>
-            {
-                products.map(prod => {
-                    return <Product producto={prod} key={prod.id} />
-                })
-            }
+            <div className="contTitulo">
+                <h3 className="titulo">Listado de productos</h3>
+                <button className='actProd btn' onClick={() => setAct(!act)}>Actualizar</button>
+            </div>
+            <div className="section">
+                {
+                    products.map(prod => {
+                        return <Product producto={prod} key={prod.id} />
+                    })
+                }
+            </div>
         </div>
     )
 }
