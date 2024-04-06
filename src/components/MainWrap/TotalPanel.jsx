@@ -21,12 +21,16 @@ function TotalPanel() {
 
 
     return (
-        <div className="total-panel">
-            <h3>Totales</h3>
-            <button onClick={() => setAct(!act)}>Actualizar</button>
-            <TotalBox nombre="productos" total={products.count} />
-            <TotalBox nombre="usuarios" total={users.count} />
-            <TotalBox nombre="categorias" total={products.countByCategory ? products.countByCategory.length : "Cargando..."} />
+        <div className="total-panel products">
+            <div className="contTitulo">
+                <h3 className="titulo">Totales</h3>
+                <button className='actProd btn' onClick={() => setAct(!act)}>Actualizar</button>
+            </div>
+            <div className="section">
+                <TotalBox nombre="productos" total={products.count} />
+                <TotalBox nombre="usuarios" total={users.count} />
+                <TotalBox nombre="categorias" total={products.countByCategory ? products.countByCategory.length : "Cargando..."} />
+            </div>
         </div>
     )
 }

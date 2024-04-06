@@ -186,6 +186,16 @@ body {
     color: var(--discount);
 }
 
+.center {
+    justify-content: center;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 20px;
+}
+
 
   /*
   .product-card-div-img {
