@@ -12,14 +12,18 @@ function Categories() {
     }, [act]);
 
     return (
-        <div className="categories">
-            <h3>Categorias</h3>
-            <button onClick={() => setAct(!act)}>Actualizar</button>
-            {
-                categories.map((cat, index) => {
-                    return <Category nombre={cat.nombre} total={cat.totalProductos} key={index} />
-                })
-            }
+        <div className="categories products">
+            <div className="contTitulo">
+                <h3 className="titulo">Categorias</h3>
+                <button className='actProd btn' onClick={() => setAct(!act)}>Actualizar</button>
+            </div>
+            <div className="section">
+                {
+                    categories.map((cat, index) => {
+                        return <Category nombre={cat.nombre} total={cat.totalProductos} key={index} />
+                    })
+                }
+            </div>
         </div>
     )
 }
