@@ -279,14 +279,45 @@ body {
   }
 
 
-  @media (min-width:768px) {
+
+
+  #checkFooter {
+    display: none;
+  }
+
+  .icono-hamburguesa{
+    padding: 5px;
+  }
+
+  .menu-tit{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    padding: 15px 0 10px;
+  }
+
+  /* *** Para implementar menu desplegable *** */
 /*
-    .menu-tit
+  .lista-menu {
+    display: none;
+  }
+
+  #checkFooter:checked + .lista-menu {
+    display: flex;
+  }
+  
+
+  @media (min-width:768px) {
+
+    .menu-tit,
     .icono-hamburguesa {
         display: none;
     }
-    */
-
+    
+    .lista-menu {
+        display: flex;
+      }
 
 
   }
+  */

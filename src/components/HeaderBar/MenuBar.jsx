@@ -11,6 +11,13 @@ function MenuBar() {
           <img src={logoZapa} alt="Logo provisirio" class="logo"/>
           <h3 class="nombre-pagina">Sports</h3>
         </div>
+        <p className='menu-tit'>
+          <input type="checkbox" id="checkFooter" />
+          <label htmlFor='checkFooter'>
+            <i class="fa-solid fa-bars icono-hamburguesa"></i>
+            Menu
+          </label>
+        </p>
         <div>
           <ul className='lista-menu'>
             <li>
@@ -18,25 +25,25 @@ function MenuBar() {
                 Home
               </Link>
             </li>
-
+  
             <li>
               <Link className='elem-lista-menu btn' to="/products">
                 Listado de productos
               </Link>
             </li>
-
+  
             <li>
               <Link className='elem-lista-menu btn' to="/products/last">
                 Ultimos productos
               </Link>
             </li>
-
+  
             <li>
               <Link className='elem-lista-menu btn' to="/products/categories">
                 Categorias
               </Link>
             </li>
-
+  
             <li>
               <Link className='elem-lista-menu btn' to="/totals">
                 Totales
@@ -44,6 +51,7 @@ function MenuBar() {
             </li>
           </ul>
         </div>
+          
       </nav>
     </div>
   )
