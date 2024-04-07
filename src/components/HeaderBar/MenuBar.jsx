@@ -11,37 +11,39 @@ function MenuBar() {
           <img src={logoZapa} alt="Logo provisirio" class="logo"/>
           <h3 class="nombre-pagina">Sports</h3>
         </div>
-        <ul className='lista-menu'>
-          <li>
-            <Link className='elem-lista-menu btn' to="/">
-              Home
-            </Link>
-          </li>
+        <div>
+          <ul className='lista-menu'>
+            <li>
+              <Link className='elem-lista-menu btn' to="/">
+                Home
+              </Link>
+            </li>
 
-          <li>
-            <Link className='elem-lista-menu btn' to="/products">
-              Listado de productos
-            </Link>
-          </li>
+            <li>
+              <Link className='elem-lista-menu btn' to="/products">
+                Listado de productos
+              </Link>
+            </li>
 
-          <li>
-            <Link className='elem-lista-menu btn' to="/products/last">
-              Ultimos productos
-            </Link>
-          </li>
+            <li>
+              <Link className='elem-lista-menu btn' to="/products/last">
+                Ultimos productos
+              </Link>
+            </li>
 
-          <li>
-            <Link className='elem-lista-menu btn' to="/products/categories">
-              Categorias
-            </Link>
-          </li>
+            <li>
+              <Link className='elem-lista-menu btn' to="/products/categories">
+                Categorias
+              </Link>
+            </li>
 
-          <li>
-            <Link className='elem-lista-menu btn' to="/totals">
-              Totales
-            </Link>
-          </li>
-        </ul>
+            <li>
+              <Link className='elem-lista-menu btn' to="/totals">
+                Totales
+              </Link>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   )

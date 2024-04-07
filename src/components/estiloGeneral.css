@@ -33,6 +33,7 @@ body {
     background-color: var(--secondary);
 }
 
+
 .menu-bar {
     text-align: center;    
 }
@@ -198,7 +199,7 @@ body {
 
 
 .card-title {
-    font-size: 16px;
+    font-size: 18px;
     color: var(--dark);
     font-weight: bold;
     padding: 10px 0;
@@ -207,7 +208,13 @@ body {
 .card-item {
     color: var(--dark-primary);
     padding: 5px 0;
+    font-size: 14px;
     text-decoration: none;
+}
+
+.caracterist {
+    font-style: italic ;
+    font-weight: bold;
 }
 
 
@@ -249,7 +256,7 @@ body {
   
 
   .infoTitulo {
-    font-size: 12px;
+    font-size: 14px;
     cursor: pointer;
   }
 
@@ -259,7 +266,7 @@ body {
   }
 
   .infoLi {
-    font-size: 9px;
+    font-size: 12px;
     padding: 1px 5px;
   }
 
@@ -269,4 +276,17 @@ body {
     font-size: 9px;
     color: var(--light);
     width: 100%;
+  }
+
+
+  @media (min-width:768px) {
+/*
+    .menu-tit
+    .icono-hamburguesa {
+        display: none;
+    }
+    */
+
+
+
   }
