@@ -197,6 +197,20 @@ body {
 }
 
 
+.card-title {
+    font-size: 16px;
+    color: var(--dark);
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.card-item {
+    color: var(--dark-primary);
+    padding: 5px 0;
+    text-decoration: none;
+}
+
+
   /*
   .product-card-div-img {
     width: 100%;

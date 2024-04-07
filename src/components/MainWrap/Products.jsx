@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Product from "./Product";
+import { Route } from "react-router-dom";
 
 function Products() {
     const [products, setProducts] = useState([]);
@@ -19,11 +20,12 @@ function Products() {
             </div>
             <div className="section">
                 {
-                    products.map(prod => {
+                    products.map((prod, id) => {
                         return <Product producto={prod} key={prod.id} />
                     })
                 }
             </div>
+            
         </div>
     )
 }
