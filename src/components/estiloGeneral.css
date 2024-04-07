@@ -221,3 +221,52 @@ body {
     overflow: hidden;
   }
   */
+
+  /****************************/
+
+  /* footer */
+
+  .footer {
+    width: 100%;
+    background-color: var(--dark);
+    padding: 1rem;
+  }
+
+  .secciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around ;
+  }
+
+  .info {
+    text-align: start;
+    color: var(--light);
+    padding: 10px 5px;
+    border-top: 1px solid var(--light);
+    border-bottom: 1px solid var(--light);
+    transition: all 200ms;
+  }
+  
+
+  .infoTitulo {
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .infoUl {
+    list-style: none;
+    padding: 5px;
+  }
+
+  .infoLi {
+    font-size: 9px;
+    padding: 1px 5px;
+  }
+
+  .copyright {
+    text-align: center;
+    padding: 30px 10px 10px;
+    font-size: 9px;
+    color: var(--light);
+    width: 100%;
+  }
