@@ -1,0 +1,323 @@
+:root {
+    --dark-primary: #132c3a;
+    --delete: #8f0000;
+    --delete-light: #d30000;
+    --primary: #4b858d;
+    --upload: #81c6db;
+    --light-primary: #a2cadf;
+    --secondary-text: #666;
+    --dark-secondary: #949494;
+    --light: #fff;
+    --dark: #000;
+    --discount: #008f39;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*
+body {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    min-height: 100vh;
+    background-color: var(--secondary);
+}
+*/
+.dashboard {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--secondary);
+}
+
+
+.menu-bar {
+    text-align: center;    
+}
+
+.menu-bar-in {
+    width: 100%;
+    padding: 0 0 10px 0;
+
+
+}
+
+.contenedor-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--dark);
+    padding: 1rem;
+  }
+
+.nombre-pagina {
+    text-align: center;
+    color: var(--light);
+    font-size: 2.5rem;
+}
+
+.logo {
+    width: 36px;
+    right: 10px;
+    top: 7px;
+    transition: all 300ms ease-in-out;
+  }
+
+.lista-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10px 10px;
+    text-decoration: none;
+}
+
+.elem-lista-menu {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 15px;
+}
+
+.btn {
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 2px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px 0;
+    padding: 8px;
+    transition: 250ms ease all;
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--light);
+}
+
+.btn:hover {
+    background-color: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+/*----------------------------------------*/
+
+.products {
+    background-color: var(--light-primary);
+    padding-bottom: 10px;
+}
+
+.contTitulo {
+    display: flex;
+    align-items: center;
+}
+
+.titulo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0 20px 20px;
+    color: var(--secondary-text);
+    font-size: 1.3rem;
+}
+
+.actProd {
+    width: 25%;
+    margin-right: 20px;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+
+.product-card {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--light);
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    text-decoration: none;
+    border: var(--primary) 3px solid;
+  }
+
+  .product-card-description {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .card-name {
+    height: 36px;
+    font-size: 16px;
+    color: var(--dark);
+    font-weight: normal;
+    overflow: auto;
+}
+
+.card-old-price {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: var(--secondary-text);
+    margin-bottom: 2px;
+}
+
+.card-new-price {
+    color: var(--dark);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.card-discount {
+    font-size: 16px;
+    color: var(--discount);
+}
+
+.center {
+    justify-content: center;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.card-title {
+    font-size: 18px;
+    color: var(--dark);
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.card-item {
+    color: var(--dark-primary);
+    padding: 5px 0;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.caracterist {
+    font-style: italic ;
+    font-weight: bold;
+}
+
+
+  /*
+  .product-card-div-img {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  */
+
+  /****************************/
+
+  /* footer */
+
+  .footer {
+    width: 100%;
+    background-color: var(--dark);
+    padding: 1rem;
+  }
+
+  .secciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around ;
+  }
+
+  .info {
+    text-align: start;
+    color: var(--light);
+    padding: 10px 5px;
+    border-top: 1px solid var(--light);
+    border-bottom: 1px solid var(--light);
+    transition: all 200ms;
+  }
+  
+
+  .infoTitulo {
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .infoUl {
+    list-style: none;
+    padding: 5px;
+  }
+
+  .infoLi {
+    font-size: 12px;
+    padding: 1px 5px;
+  }
+
+  .copyright {
+    text-align: center;
+    padding: 30px 10px 10px;
+    font-size: 9px;
+    color: var(--light);
+    width: 100%;
+  }
+
+
+
+
+  #checkFooter {
+    display: none;
+  }
+
+  .icono-hamburguesa{
+    padding: 5px;
+  }
+
+  .menu-tit{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    padding: 15px 0 10px;
+  }
+
+  /* *** Para implementar menu desplegable *** */
+/*
+  .lista-menu {
+    display: none;
+  }
+
+  #checkFooter:checked + .lista-menu {
+    display: flex;
+  }
+  
+
+  @media (min-width:768px) {
+
+    .menu-tit,
+    .icono-hamburguesa {
+        display: none;
+    }
+    
+    .lista-menu {
+        display: flex;
+      }
+
+
+  }
+  */
