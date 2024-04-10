@@ -103,6 +103,12 @@ body {
     color: var(--primary);
 }
 
+.imagenHome {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
 /*----------------------------------------*/
 
 .products {
